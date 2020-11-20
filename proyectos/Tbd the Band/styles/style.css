@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Changa+One&effect=anaglyph);
+
+.bg-img {
+    background-image: url("../media/img/head/stickyfingersBG.jpg");
+    min-height: 100vh;
+  
+    /* Centrar y escalar la imagen*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+
+/* Posicionar el container de la barra de navegacion dentro de la imagen */
+#container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* La barra de navegación */
+ul.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: static;
+}
+li.nav-menu-item {
+    float: left;
+}
+
+/* Links de la navbar */
+li.nav-menu-item a {
+    font-size: large;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 7px;
+    position: relative;
+}
+
+/*Efectos de la navbar*/
+li.nav-menu-item a:before {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+  
+li.nav-menu-item a:hover:before {
+    visibility: visible;
+    width: 100%; 
+    left: 0;
+}
+
+/*Efecto del h1*/
+h1.font-effect-anaglyph {
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgba(5, 11, 15, 0.9);
+}
+
+/*Contenido*/
+#home-content{
+    padding-top: 100px;
+}
+#content-row{
+    padding-top: 70px;
+}
+
+/*Lista de ciudades*/
+ul.citys-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:none;
+    width: 100%;
+}
+
+li.citys-list-item{
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    padding: 10px 20px;
+
+}
+
+/*Enlaces*/
+li.citys-list-item a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/*Video*/
+#video-col{
+    padding-top: 25px;
+}
+
+/*Flecha animada*/
+.ca3-scroll-down-arrow {
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iQ2hldnJvbl90aGluX2Rvd24iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiBmaWxsPSJ3aGl0ZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTE3LjQxOCw2LjEwOWMwLjI3Mi0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwYzAuMjcsMC4yNjgsMC4yNzEsMC43MDEsMCwwLjk2OWwtNy45MDgsNy44M2MtMC4yNywwLjI2OC0wLjcwNywwLjI2OC0wLjk3OSwwbC03LjkwOC03LjgzYy0wLjI3LTAuMjY4LTAuMjctMC43MDEsMC0wLjk2OWMwLjI3MS0wLjI2OCwwLjcwOS0wLjI2OCwwLjk3OSwwTDEwLDEzLjI1TDE3LjQxOCw2LjEwOXoiLz48L3N2Zz4=);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ca3-scroll-down-link {
+    cursor:pointer;
+      height: 60px;
+      width: 80px;
+      margin: 0px 0 0 -40px;
+      line-height: 60px;
+      position: absolute;
+      left: 50%;
+      bottom: 0px;
+      color: #FFF;
+      text-align: center;
+      font-size: 70px;
+      z-index: 100;
+      text-decoration: none;
+      text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  
+      -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+      -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+      animation:         ca3_fade_move_down 2s ease-in-out infinite;
+  }
+  
+/*Animación de la flecha*/
+@keyframes ca3_fade_move_down {
+    0%   { transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,20px); opacity: 0; }
+}
+ 
+
+

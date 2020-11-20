@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>TBD THE BAND</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="styles/music.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="media/img/favicon2.ico" type="image/x-icon">
+    <link rel="icon" href="media/img/favicon2.ico" type="image/x-icon">     
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--Elemento que contiene el header, la imagen de bienvenida y la flecha animada-->
+    <div class="bg-img">
+      <!--Header de la página-->
+      <div class="header">
+        <!--Row de bootstrap que contiene la barra de navegación, el logo, y enlaces a redes sociales en el header-->
+        <div class="row justify-content-md-center">
+          <!--Columna de la barra de navegación-->
+          <div class="col">
+            <div id="container">
+              <nav role="navigation">
+                <ul class="top-nav">
+                    <li class="nav-menu-item"><a href="music.html">Music</a></li>
+                    <li class="nav-menu-item"><a href="#">Tour</a></li>
+                    <li class="nav-menu-item"><a href="#">Tienda</a></li>
+                    <li class="nav-menu-item"><a href="#">Fotos</a></li>
+                    <li class="nav-menu-item"><a href="#">Bio</a></li>
+                    <li class="nav-menu-item"><a href="contactos.html">Contacto</a></li>
+                    <li class="nav-menu-item"><a href="#">Fans</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!--Columna para el logo-->
+          <div class="col col-lg-2">
+            <div id="container">
+              <div class="logo">
+                <!--Logo SVG con colores invertidos y enlace a index.html-->
+                <a href="index.html"><img src="media/img/logo/logo2-small-black.svg" style="filter: invert(1);"></a>
+              </div>
+            </div>
+          </div>
+          <!--Columna para elaces a redes sociales todavia no añadidos-->
+          <div class="col">
+            <div id="container">
+              <div class="social">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Container responsivo de bootstrap para las rows del contenido-->
+    <div class="container-fluid" id="content">
+      <div class="row">
+        <div class="col">
+          <div class="content-title">
+            <h1 class="font-effect-anaglyph">Canciones</h1>
+          </div>
+        </div>
+      </div>
+
+      <!--Row para albums con reproductores de música para mp3, aac y ogg-->
+      <div class="row" id="album-row">
+        <!--Columna de album1-->
+        <div class="col" id="album-col">
+            <div class="album">
+              <img class="img-fluid" src="media/img/albums/caress2.jpg" id="album-img">
+              <p class="album-title">Caress your soul</p>
+              <audio controls="true" autoplay style="width: 100%;">
+                <source src="media/music/Laika - Sticky Fingers.ogg" type="audio/ogg"> 
+                <source src="media/music/Laika - Sticky Fingers.aac" type="audio/mp4"> 
+                <source src="media/music/Laika - Sticky Fingers.mp3" type="audio/mp3"> 
+              </audio>
+            </div>
+        </div>
+        <!--Columna de album2-->
+        <div class="col" id="album-col">
+            <div class="album">
+              <img class="img-fluid" src="media/img/albums/extended2.jpg" id="album-img">
+              <p class="album-title">Extended Play</p>
+              <audio controls="true" autoplay style="width: 100%;">
+                <source src="media/music/Laika - Sticky Fingers.ogg" type="audio/ogg"> 
+                <source src="media/music/Laika - Sticky Fingers.aac" type="audio/mp4"> 
+                <source src="media/music/Laika - Sticky Fingers.mp3" type="audio/mp3"> 
+              </audio>
+            </div>
+        </div>
+        <!--Columna de album3-->
+        <div class="col" id="album-col">
+            <div class="album">
+              <img class="img-fluid" src="media/img/albums/landof2.jpg" id="album-img">
+              <p class="album-title">Land of pleasure</p>
+              <audio controls="true" autoplay style="width: 100%;">
+                <source src="media/music/Laika - Sticky Fingers.ogg" type="audio/ogg"> 
+                <source src="media/music/Laika - Sticky Fingers.aac" type="audio/mp4"> 
+                <source src="media/music/Laika - Sticky Fingers.mp3" type="audio/mp3"> 
+              </audio>
+            </div>
+        </div>
+        <!--Columna de album4-->
+        <div class="col" id="album-col">
+          <div class="album">
+            <img class="img-fluid" src="media/img/albums/looseends2.jpeg" id="album-img">
+            <p class="album-title">Loose ends</p>
+              <audio controls="true" autoplay style="width: 100%;">
+                <source src="media/music/Laika - Sticky Fingers.ogg" type="audio/ogg"> 
+                <source src="media/music/Laika - Sticky Fingers.aac" type="audio/mp4"> 
+                <source src="media/music/Laika - Sticky Fingers.mp3" type="audio/mp3"> 
+              </audio>
+          </div>
+      </div>
+    </div>
+      
+  </body>
+</html>

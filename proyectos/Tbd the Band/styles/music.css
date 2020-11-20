@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Changa+One&effect=anaglyph);
+
+.bg-img{
+    background-image: url("../media/img/head/stage.jpg");
+    height: 500px;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+}
+
+/* Posicionar el container de la barra de navegacion dentro de la imagen */
+#container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+/* La barra de navegación */
+ul.top-nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    position: static;
+}
+li.nav-menu-item {
+    float: left;
+}
+
+/* Links de la navbar */
+li.nav-menu-item a {
+    font-size: large;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 7px;
+    position: relative;
+}
+
+/*Efectos de la navbar*/
+li.nav-menu-item a:before {    
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    width: 0;
+}
+  
+li.nav-menu-item a:hover:before {
+    visibility: visible;
+    width: 100%; 
+    left: 0;
+}
+
+/*Efecto del h1*/
+h1.font-effect-anaglyph {
+    font-family: 'Special Elite', cursive;
+    font-size: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    color: rgba(5, 11, 15, 0.9);
+}
+
+#content{
+    padding-top: 100px;
+    padding-left: 50px;
+}
+
+/*Albums*/
+#album-row{
+    padding-top: 80px;
+}
+
+#album-col{
+    max-width: 35%;
+}
+
+.album{
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    background: #474747;
+    max-width: 80%;
+    height: 370px;
+}    
+
+.album-title{
+    color: beige;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+#album-img{
+    margin-top: 20px;width: 80%; 
+}
